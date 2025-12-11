@@ -3,7 +3,7 @@ revision = 3
 requires-python = ">=3.10"
 
 [[package]]
-name = "aws-resources-identifier"
+name = "aws-resource-tagger"
 version = "1.0.0"
 source = { editable = "." }
 dependencies = [
