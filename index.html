@@ -3,7 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AWS Resource Identifier</title>
+    <title>AWS Resource Identifier - CloudFormation Resource Types & Primary Identifiers</title>
+    <meta name="description" content="Browse and search AWS CloudFormation resource types with their primary identifiers. Find resource schemas, services, and identifiers for AWS infrastructure as code.">
+    <meta name="keywords" content="AWS, CloudFormation, resource types, primary identifiers, AWS resources, infrastructure as code, IaC, cloud resources, AWS schemas">
+    <meta name="author" content="AWS Resource Tagger">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://aws-resource-identifier.example.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="AWS Resource Identifier - CloudFormation Resource Types & Primary Identifiers">
+    <meta property="og:description" content="Browse and search AWS CloudFormation resource types with their primary identifiers. Find resource schemas, services, and identifiers for AWS infrastructure as code.">
+    <meta property="og:url" content="https://aws-resource-identifier.example.com/">
+    <meta property="og:site_name" content="AWS Resource Identifier">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AWS Resource Identifier - CloudFormation Resource Types & Primary Identifiers">
+    <meta name="twitter:description" content="Browse and search AWS CloudFormation resource types with their primary identifiers. Find resource schemas, services, and identifiers for AWS infrastructure as code.">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "AWS Resource Identifier",
+        "description": "Browse and search AWS CloudFormation resource types with their primary identifiers",
+        "url": "https://aws-resource-identifier.example.com/",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
+
     <style>
         * {
             box-sizing: border-box;
@@ -257,23 +293,37 @@
         footer a {
             color: #0073bb;
         }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <header>
+        <header role="banner">
             <div class="header-text">
                 <h1>AWS Resource Identifier</h1>
                 <p>Browse and search AWS CloudFormation resource types and their primary identifiers</p>
             </div>
             <div class="header-right">
-                <a href="aws_resources.json" class="json-link" target="_blank">JSON for API</a>
+                <a href="aws_resources.json" class="json-link" target="_blank" rel="noopener">JSON for API</a>
                 <div class="header-search">
-                    <input type="text" id="globalSearch" placeholder="Search all columns...">
+                    <label for="globalSearch" class="visually-hidden">Search all columns</label>
+                    <input type="text" id="globalSearch" placeholder="Search all columns..." aria-label="Search all columns">
                 </div>
             </div>
         </header>
 
+        <main role="main">
         <div class="table-container">
             <div id="resultsCount" class="results-count"></div>
             <div class="table-scroll">
@@ -331,9 +381,10 @@
                 </table>
             </div>
         </div>
+        </main>
 
-        <footer>
-            Data sourced from <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resource-type-schemas.html" target="_blank">AWS CloudFormation Resource Provider Schemas</a>
+        <footer role="contentinfo">
+            Data sourced from <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resource-type-schemas.html" target="_blank" rel="noopener noreferrer">AWS CloudFormation Resource Provider Schemas</a>
         </footer>
     </div>
 
