@@ -1,6 +1,8 @@
-# AWS Resource Tagger
+# AWS Resource Identifier
 
 Tag AWS resources with their primary identifiers. Includes a web UI to browse CloudFormation resource schemas.
+
+**Live Tool:** https://ari.ethbyte.com
 
 ## Quick Start
 

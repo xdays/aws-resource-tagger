@@ -1,5 +1,5 @@
 [project]
-name = "aws-resource-tagger"
+name = "aws-resource-identifier"
 version = "1.0.0"
 description = "Tag AWS resources with their primary identifiers, with a web UI to browse CloudFormation resource schemas"
 readme = "README.md"
@@ -43,9 +43,9 @@ dev = [
 tag-resources = "tag_resources:main"
 
 [project.urls]
-Homepage = "https://github.com/xdays/aws-resource-tagger"
-Repository = "https://github.com/xdays/aws-resource-tagger"
-Issues = "https://github.com/xdays/aws-resource-tagger/issues"
+Homepage = "https://github.com/xdays/aws-resource-identifier"
+Repository = "https://github.com/xdays/aws-resource-identifier"
+Issues = "https://github.com/xdays/aws-resource-identifier/issues"
 
 [build-system]
 requires = ["hatchling"]
